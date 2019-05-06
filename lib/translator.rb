@@ -5,7 +5,7 @@ def load_library(file_path)
   
   library = YAML.load_file(file_path)
   library.each do |meaning, emoticons|
-    puts meaning  
+    emoticons 
   end
 end
 
