@@ -3,7 +3,7 @@ require "yaml"
 # get_emotion {English => Japanesse} get-meaning {japanese > meaing}
 def load_library(file_path)
   new_hash = {
-    "get_emotion" => {},
+    "get_emoticon" => {},
     "get_meaning" => {}
   }
   library = YAML.load_file(file_path)
