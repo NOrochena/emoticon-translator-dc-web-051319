@@ -5,7 +5,11 @@ def load_library(file_path)
   
   library = YAML.load_file(file_path)
   library.each do |meaning, emoticons|
-    puts emoticons 
+    emoticons_each_with_index do |emoticon, index|
+      if index == 0
+        
+      end
+    end
   end
 end
 
