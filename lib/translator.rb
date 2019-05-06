@@ -2,15 +2,20 @@
 require "yaml"
 # get_emotion {English => Japanesse} get-meaning {japanese > meaing}
 def load_library(file_path)
-  
+  new_hash = {
+    "get_emotion" => {}
+    "get_meaning" => {}
+  }
   library = YAML.load_file(file_path)
+  
   library.each do |meaning, emoticons|
     emoticons_each_with_index do |emoticon, index|
       if index == 0
-        
+          
       end
     end
   end
+  new_hash
 end
 
 def get_japanese_emoticon
