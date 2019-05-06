@@ -11,7 +11,9 @@ def load_library(file_path)
   library.each do |meaning, emoticons|
     emoticons_each_with_index do |emoticon, index|
       if index == 0
-          
+        new_hash["get_emotion"][emoticon] = emoticon[1]
+      else
+        new_hash["get_meaning"][emoticon[1]] = meaning
       end
     end
   end
