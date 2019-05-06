@@ -1,6 +1,6 @@
 # require modules here
 require "yaml"
-
+# get_emotion {English => Japanesse} get-meaning {japanese > meaing}
 def load_library(file_path)
   
   library = YAML.load_file(file_path)
